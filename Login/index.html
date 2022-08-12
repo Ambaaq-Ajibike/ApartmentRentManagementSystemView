@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/vendors/select2/select2.min.css">
+  <link rel="stylesheet" href="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/images/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="forms-sample" id="form-div" style=" width: 27pc; padding:2pc; margin: 4pc 30pc;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(134, 127, 127, 0.3) 0px 30px 60px -30px, rgba(235, 237, 240, 0.35) 0px -2px 6px 0px inset; ">
+         <div class="form-group">
+          <p id="err-message" style="background-color: red;"></p>
+            <label for="exampleInputEmail1" style="color: white;">Email address</label>
+            <input type="email" class="form-control" style="border: 2px solid black; width: 20pc;" id="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" style="color: white;">Password</label>
+            <input type="password" class="form-control" style="border: 2px solid black; width: 20pc;"  id="password" placeholder="Password">
+            
+        </div>
+        <button type="submit"onclick="Submit()"  id="btn" class="login-button btn btn-primary mr-2">Login</button>
+        <div>
+          <h5 style="margin-top: 10px; color: white;">Sign Up</h5>
+            <div style="display: flex; gap: 10pc;">
+              <a href="/Register/SignUp.html" class="btn btn-primary mr-2">As Landlord</a>
+              <a href="/CustomerRegistration/index.html" class="btn btn-primary mr-2">As Customer</a>
+            </div>
+        </div>
+      </div>
+
+      <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+      <div id="preloader"></div>
+
+      <script src="script.js"></script>
+      <script src="/ApartmentRegistration/script.js"></script>
+</body>
+</html>

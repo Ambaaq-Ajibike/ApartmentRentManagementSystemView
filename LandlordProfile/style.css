@@ -1,0 +1,16 @@
+*{
+    font-size: 2px;
+}
+.form-div{
+    margin: 2pc;
+}
+.form-div input{
+    height: 2pc;
+    width: 20pc;
+    border: 2px solid black;
+}
+select{
+    height: 2pc;
+    width: 20pc;
+    border: 2px solid black;
+}

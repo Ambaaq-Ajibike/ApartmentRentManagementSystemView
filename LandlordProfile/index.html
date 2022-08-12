@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Register/style.css">
+</head>
+<body>
+    <form enctype="multipart/form-data" id="registration-form" style="width: 48pc; padding:2pc; padding-top: 2px; margin: 4pc 20pc;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; ">
+        <div style="background-color: #2ECA6A; display: flex; align-items: center; justify-content: center; margin: 2pc; padding: 0px;">
+            <h1 style="color: white; font-size: 5pc; margin: 0px;">Profile Update</h1>
+        </div>
+        <div style="display: flex;">
+            <div>
+                <div>
+                    <div id="displayPics">
+                        <label for="exampleInputConfirmPassword1">Change picture</label>
+                        <input type="file" class="form-control" placeholder="Phone" name="image" id="profile-picture">
+                    </div>
+                </div>
+                <div class="form-div">
+                    <label style="font-size: 1.3pc;">Email address</label>
+                    <input type="email" class="form-control" style="border: 2px solid black; width: 20pc;" placeholder="Email" name="email" type="email" id="Email">
+                </div>
+                <div class="form-div">
+                    <label style="font-size: 1.3pc;">Country</label>
+                    <input name="country" value="Nigeria" type="text" placeholder="Country" id="country">
+                  </div>
+                <div class="form-div">
+                    <label style="font-size: 1.3pc;" >Local Govt Area</label>
+                    <input  name="lga" onfocus="displayCities();" id="lga" type="text"  placeholder="LGA" type="text"  style="border: 2px solid rgb(150, 135, 135);" class="form-control" >
+                   
+                    <!-- <select name="lga" onfocus="displayCities();" id="lga" type="text"  placeholder="LGA">
+           
+                  </select> -->
+                </div>
+                <div class="form-div">
+                    <label style="font-size: 1.3pc;">Account Number</label>
+                    <input type="text"  id="acc-no" name="accountNumber" placeholder="Account Number">
+                  </div>
+            </div>
+            <div>
+                <div class="form-div">
+                    <label style="font-size: 1.3pc;">Firstname</label>
+                    <input type="text" placeholder="Firstname" name="firstname" id="FirstName">
+                </div>
+                <div class="form-div">
+                    <label style="font-size: 1.3pc;">Lastname</label>
+                    <input type="text" placeholder="Lastname" name="lastname" id="LastName">
+                </div>
+                <div class="form-div">
+                    <label style="font-size: 1.3pc;">Phone Number</label>
+                    <input type="text"  placeholder="Phone" name="phonenumber" id="phone">
+                </div>
+               <div class="form-div">
+                    <label style="font-size: 1.3pc;">State</label>
+                    <input  name="state" type="text" id="state"  placeholder="State" type="text"  style="border: 2px solid rgb(150, 135, 135);" class="form-control">
+                        <!-- <select name="state" type="text" id="state"  placeholder="State">
+                    
+                        </select> -->
+                </div>
+                <div class="form-div">
+                    <label style="font-size: 1.3pc;">Address Description</label>
+                    <input type="text" id="decription" name="addressdescription" placeholder="Home Address">
+                </div>
+                <div class="form-div">
+                    <label style="font-size: 1.3pc;">Bank</label>
+                    <select name="bankName" onfocus="displayBanks();" id="bank" type="text" placeholder="Banks">
+                     
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between;">            
+            <button type="submit" id="btn" style="width: 7pc; height: 5pc; cursor: pointer; font-size: 1.3pc; border-radius: 5px; color: white; background-color: #2ECA6A; border: #2ECA6A;" id="btn" onclick="dNAme()" class="btn btn-primary mr-2">Submit</button>
+            <button type="submit" style="width: 5pc; height: 3pc; cursor: pointer; font-size: 1.3pc; border-radius: 5px; color: white; background-color: #2ECA6A; border: #2ECA6A;" id="btn" class="btn btn-primary mr-2"><a href="/LandlordDashboard/index.html"> Back</a></button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>

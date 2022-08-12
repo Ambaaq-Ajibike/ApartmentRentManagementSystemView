@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Apartment Utility</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/vendors/select2/select2.min.css">
+  <link rel="stylesheet" href="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/images/favicon.png" />
+  <link rel="stylesheet" href="/Login/style.css">
+</head>
+<body>
+    <div class="col-12 grid-margin stretch-card" style="width: 30pc; margin: 5pc 12pc;">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Apartment Utilities</h4>
+            <p id="err-message" style="background-color: red;"></p>
+              <div class="form-group">
+                <label for="exampleInputName1">Name</label>
+                <input type="text" id="Utilityname" style="border: 2px solid rgb(150, 135, 135);" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail3">Price pay per Month</label>
+                <input type="number"  id="Utilityamount" style="border: 2px solid rgb(150, 135, 135);;" class="form-control" placeholder="Amount">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword4">Account Pay To</label>
+                <input type="text" id="Utilitydescription"style="border: 2px solid rgb(150, 135, 135);" class="form-control"  placeholder="Amount">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputConfirmPassword1">Bank</label>
+                <!-- <input type="text" class="form-control" id="bankName" name="bankName" style="border: 2px solid black; width: 20pc;"  placeholder="BankName"> -->
+                <select name="bankName" onfocus="displayBanks();" id="banks" type="text" style="border: 2px solid rgb(150, 135, 135); width: 20pc;" class="form-control" placeholder="Banks">
+                 
+                </select>
+              </div>
+              <div id="new-btn">                
+                <button type="submit" onclick="addData3()" class="btn btn-primary mr-2">Add To Table</button>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Utility Table</h4>
+            
+            <div class="table-responsive pt-3">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>S/N</th>
+                    
+                    <th>Name</th>
+                    
+                    <th>Amount</th>
+                    
+                    <th>AccNum</th>
+                  </tr>
+                </thead>
+                  <tbody class="my-Utility-table">
+                         
+                  </tbody>
+              </table>
+          </div>
+            <button id="btn" onclick="SubmitUtilityForm()" class="btn btn-primary mr-2">
+                Submit
+            </button>
+        </div>
+      </div>
+
+</body>
+<!-- base:js -->
+<script src="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/vendors/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- inject:js -->
+<script src="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/js/off-canvas.js"></script>
+<script src="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/js/hoverable-collapse.js"></script>
+<script src="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/js/template.js"></script>
+<script src="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/js/settings.js"></script>
+<script src="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/js/todolist.js"></script>
+<!-- endinject -->
+<!-- plugin js for this page -->
+<script src="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+<script src="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/vendors/select2/select2.min.js"></script>
+<!-- End plugin js for this page -->
+<!-- Custom js for this page-->
+<script src="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/js/file-upload.js"></script>
+<script src="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/js/typeahead.js"></script>
+<script src="/polluxui-free-admin-template-1.0.0/polluxui-free-admin-template-1.0.0/template/js/select2.js"></script>
+<!-- End custom js for this page-->
+<script src="script.js"></script>
+<script src="/ApartmentRegistration/script.js"></script>
+</body>
+</html>
